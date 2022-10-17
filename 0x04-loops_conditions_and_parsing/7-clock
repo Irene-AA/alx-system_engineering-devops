@@ -7,8 +7,8 @@ while [ $HOUR -le 12 ]; do
     echo "Hour: ${HOUR}"
     while [ $MINUTE -lt 60 ]; do
 	echo $MINUTE
-	let MINUTE+=1
+	((MINUTE+=1))
     done
-    let MINUTE=0
-    let HOUR+=1
+    ((MINUTE=0))
+    ((HOUR+=1))
 done
